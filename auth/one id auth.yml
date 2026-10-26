@@ -1,0 +1,25 @@
+info:
+  name: one id auth
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/client/mobile/client/login"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  body:
+    type: json
+    data: |-
+      {
+        "one_id_token": "edea2c2c-58e7-4b07-b021-ee4ce139b06g"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

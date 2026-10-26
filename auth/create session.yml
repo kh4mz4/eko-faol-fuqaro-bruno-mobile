@@ -1,0 +1,33 @@
+info:
+  name: create session
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/client/mobile/client/create_session"
+  body:
+    type: json
+    data: |-
+      {
+        "device_id": "string",
+        "device_model": "string",
+        "device_type": "ANDROID",
+        "device_operation_version": "string",
+        "login_location": {
+          "additionalProp1": {}
+        },
+        "ip_address": "string",
+        "app_version_name": "string",
+        "firebase_token": "string",
+        "theme": "dark",
+        "language": "uz"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,8 @@
+name: mobile_env
+variables:
+  - name: base_url
+    value: http://zkteam.uz:2110/api/v1
+    description: ""
+  - name: client_session
+    value: dc49cc09fdfab1723fbdc19abd5052c26390b210c5e28e5aaa62d3156af2d2b4
+    description: ""
