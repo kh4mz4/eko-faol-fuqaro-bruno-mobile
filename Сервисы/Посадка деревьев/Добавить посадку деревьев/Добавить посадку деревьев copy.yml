@@ -1,0 +1,40 @@
+info:
+  name: Добавить посадку деревьев copy
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/task/mobile/tree/create_tree"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  body:
+    type: multipart-form
+    data:
+      - name: tree_type
+        type: text
+        value: 01a0ed1a-e41b-7ec7-b4bb-33af7e608774
+      - name: count
+        type: text
+        value: "10"
+      - name: lat
+        type: text
+        value: "12.102"
+      - name: long
+        type: text
+        value: "1.1402"
+      - name: images
+        type: file
+        value:
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Снимок экрана 2026-10-09 144732.png
+        contentType: multipart/mixed
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

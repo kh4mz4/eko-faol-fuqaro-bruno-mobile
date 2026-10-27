@@ -6,3 +6,9 @@ variables:
   - name: client_session
     value: dc49cc09fdfab1723fbdc19abd5052c26390b210c5e28e5aaa62d3156af2d2b4
     description: ""
+  - name: tree_uuid
+    value: 01a17c13-0c3f-7c23-88ce-84d002c031f3
+    description: ""
+  - name: image_uuid
+    value: 01a17c13-0c4a-71d9-b776-3cf0aaa1c7f2
+    description: ""

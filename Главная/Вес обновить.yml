@@ -1,0 +1,33 @@
+info:
+  name: Вес обновить
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{base_url}}/task/mobile/weight/weight_create"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  body:
+    type: multipart-form
+    data:
+      - name: weight
+        type: text
+        value: "90"
+      - name: expected_weight
+        type: text
+        value: "80"
+      - name: image
+        type: file
+        value:
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
+        contentType: image/png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

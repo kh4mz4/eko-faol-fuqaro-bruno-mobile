@@ -1,0 +1,19 @@
+info:
+  name: Удалить изображения
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{base_url}}/task/mobile/tree/delete_image/{{image_uuid}}"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
