@@ -1,0 +1,38 @@
+info:
+  name: Список солнечные панели
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{base_url}}/task/mobile/solar_panel/get_client_solar_panel?page=1&page_size=10"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: page_size
+      value: "10"
+      type: query
+    - name: status
+      value: CREATED
+      type: query
+      disabled: true
+    - name: status
+      value: APPROVED
+      type: query
+      disabled: true
+    - name: status
+      value: REJECTED
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

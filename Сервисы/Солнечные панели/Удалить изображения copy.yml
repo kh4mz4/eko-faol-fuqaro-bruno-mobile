@@ -1,0 +1,19 @@
+info:
+  name: Удалить изображения copy
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{base_url}}/task/mobile/solar_panel/delete_solar_panel_images/{{image_uuid}}"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,46 @@
+info:
+  name: Изменить
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{base_url}}/task/mobile/solar_panel/update_solar_panel/{{solar_pane_uuid}}"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  body:
+    type: multipart-form
+    data:
+      - name: person_account
+        type: text
+        value: 01a0ed1a-e41b-7ec7-b4bb-33af7e608774
+      - name: count
+        type: text
+        value: "1"
+      - name: lat
+        type: text
+        value: "12.401"
+      - name: long
+        type: text
+        value: "12.3"
+      - name: images
+        type: file
+        value:
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Снимок экрана 2026-10-09 144732.png
+        contentType: multipart/mixed
+      - name: person_account string | (string | null) string Send empty value contract_number
+        type: text
+        value: "1201221"
+      - name: power
+        type: text
+        value: "120"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

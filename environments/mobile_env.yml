@@ -12,3 +12,6 @@ variables:
   - name: image_uuid
     value: 01a17c13-0c4a-71d9-b776-3cf0aaa1c7f2
     description: ""
+  - name: solar_pane_uuid
+    value: 01a17c9b-4cd8-7fda-a040-589d84e3c52b
+    description: ""
