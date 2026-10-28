@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{base_url}}/task/mobile/weight/create_trash"
+  url: "{{base_url}}/task/mobile/trash/create_trash"
   headers:
     - name: Token
       value: "{{client_session}}"

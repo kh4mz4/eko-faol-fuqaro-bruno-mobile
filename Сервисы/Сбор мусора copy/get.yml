@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{base_url}}/task/mobile/weight/get_trash?page=1&page_size=10"
+  url: "{{base_url}}/task/mobile/trash/get_trash?page=1&page_size=10"
   headers:
     - name: Token
       value: "{{client_session}}"

@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{base_url}}/task/mobile/weight/update_trash/{{trash_base}}"
+  url: "{{base_url}}/task/mobile/trash/update_trash/{{trash_base}}"
   headers:
     - name: Token
       value: "{{client_session}}"
