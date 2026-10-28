@@ -1,0 +1,88 @@
+info:
+  name: Untitled
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/task/mobile/car/create_car"
+  headers:
+    - name: Token
+      value: 7a9b00b98085fd86de189d9c5b4f9c708114d6b007e76719d917090ff5fe67b3
+  body:
+    type: multipart-form
+    data:
+      - name: old_brand
+        type: text
+        value: str
+      - name: old_model
+        type: text
+        value: str
+      - name: old_manufacture_year
+        type: text
+        value: "2026"
+      - name: fuel_type
+        type: text
+        value: PETROL
+      - name: old_average_fuel_consumption
+        type: text
+        value: "10"
+      - name: new_brand
+        type: text
+        value: str
+      - name: new_model
+        type: text
+        value: str
+      - name: new_manufacture_year
+        type: text
+        value: "2026"
+      - name: battery_capacity
+        type: text
+        value: "1"
+      - name: max_range
+        type: text
+        value: "1"
+      - name: purchase_date
+        type: text
+        value: "0"
+      - name: purchase_date
+        type: text
+        value: 2026-10-28
+      - name: purchase_type
+        type: text
+        value: str
+      - name: monthly_average_distance
+        type: text
+        value: "12"
+      - name: transition_reasons
+        type: text
+        value: str
+      - name: additional_information
+        type: text
+        value: str
+      - name: old_car_images
+        type: file
+        value:
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Снимок экрана 2026-10-09 144732.png
+        contentType: multipart/mixed
+      - name: new_car_images
+        type: file
+        value:
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Снимок экрана 2026-10-09 144732.png
+        contentType: multipart/mixed
+      - name: document_images
+        type: file
+        value:
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
+          - C:\Users\HR\OneDrive\Pictures\Screenshots\Снимок экрана 2026-10-09 144732.png
+        contentType: multipart/mixed
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

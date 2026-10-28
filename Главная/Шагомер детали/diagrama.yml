@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{base_url}}/step/mobile/step/step_detail"
+  url: "{{base_url}}/step/mobile/step/step_detail?period=day"
   headers:
     - name: Token
-      value: dc49cc09fdfab1723fbdc19abd5052c26390b210c5e28e5aaa62d3156af2d2b4
+      value: "{{client_session}}"
   params:
     - name: period
       value: week
@@ -21,7 +21,6 @@ http:
     - name: period
       value: day
       type: query
-      disabled: true
   auth: inherit
 
 settings:

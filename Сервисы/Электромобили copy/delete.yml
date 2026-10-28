@@ -1,0 +1,19 @@
+info:
+  name: delete
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{base_url}}/task/mobile/car/delete_image/{{image_uuid}}"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

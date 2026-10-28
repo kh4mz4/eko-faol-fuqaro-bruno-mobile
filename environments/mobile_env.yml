@@ -4,7 +4,7 @@ variables:
     value: http://zkteam.uz:2110/api/v1
     description: ""
   - name: client_session
-    value: dc49cc09fdfab1723fbdc19abd5052c26390b210c5e28e5aaa62d3156af2d2b4
+    value: be948d02666c23f07eb12d277a4b507fb09a536804e23a9982dc668d274d4021
     description: ""
   - name: tree_uuid
     value: 01a17c13-0c3f-7c23-88ce-84d002c031f3
@@ -14,4 +14,10 @@ variables:
     description: ""
   - name: solar_pane_uuid
     value: 01a17c9b-4cd8-7fda-a040-589d84e3c52b
+    description: ""
+  - name: image_uuid
+    value: 01a1810b-6bd6-726a-b8f3-e9a7747a56d0
+    description: ""
+  - name: car_uuid
+    value: 01a1818e-4dc1-7d54-ae4e-4ba19e6dc4ad
     description: ""

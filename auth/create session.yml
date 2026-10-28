@@ -10,18 +10,19 @@ http:
     type: json
     data: |-
       {
-        "device_id": "string",
-        "device_model": "string",
+        "device_id": "CE2A.260420.051.A2",
+        "device_model": "sdk_gphone64_arm64",
         "device_type": "ANDROID",
-        "device_operation_version": "string",
+        "device_operation_version": "Android 17",
         "login_location": {
-          "additionalProp1": {}
+          "lat": 41.311081,
+          "long": 69.240562
         },
-        "ip_address": "string",
-        "app_version_name": "string",
-        "firebase_token": "string",
-        "theme": "dark",
-        "language": "uz"
+        "ip_address": "0.0.0.0",
+        "app_version_name": "1.0.0",
+        "firebase_token": "fnqtze5zQMe60MUS8N7KFo:APA91bHbZL7cGYfgQ0MkbR3SS1TkC2DbEw_B7SsvukYQ4vcwHHZ_4Fold9V8nAY7V76e9lJmJfnK8dGnj0TU-ahqjuMGVJsmpGabFRyrgsFE3BFKzGXJveY",
+        "theme": "light",
+        "language": "ru"
       }
   auth: inherit
 
