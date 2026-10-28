@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{base_url}}/task/mobile/car/update_car/{{car_uuid}}"
+  url: "{{base_url}}/task/mobile/car/update_car/01a18216-5adf-7a1c-b736-29e5f2f95d75"
   headers:
     - name: Token
       value: "{{client_session}}"
@@ -72,12 +72,14 @@ http:
           - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
           - C:\Users\HR\OneDrive\Pictures\Screenshots\Снимок экрана 2026-10-09 144732.png
         contentType: multipart/mixed
+        disabled: true
       - name: document_images
         type: file
         value:
           - C:\Users\HR\OneDrive\Pictures\Screenshots\Screenshot 2026-05-17 133546.png
           - C:\Users\HR\OneDrive\Pictures\Screenshots\Снимок экрана 2026-10-09 144732.png
         contentType: multipart/mixed
+        disabled: true
   auth: inherit
 
 settings:

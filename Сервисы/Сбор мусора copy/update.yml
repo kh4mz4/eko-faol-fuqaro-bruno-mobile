@@ -1,0 +1,19 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{base_url}}/task/mobile/weight/update_trash/{{trash_base}}"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

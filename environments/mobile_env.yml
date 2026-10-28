@@ -21,3 +21,6 @@ variables:
   - name: car_uuid
     value: 01a1818e-4dc1-7d54-ae4e-4ba19e6dc4ad
     description: ""
+  - name: trash_base
+    value: 01a1818e-4dc1-7d54-ae4e-4ba19e6dc4ad
+    description: ""
