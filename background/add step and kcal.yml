@@ -1,0 +1,27 @@
+info:
+  name: add step and kcal
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/step/mobile/step/create_step"
+  headers:
+    - name: Token
+      value: "{{client_session}}"
+  body:
+    type: json
+    data: |-
+      {
+        "count": 1000,
+        "kcal": 1,
+        "date_at": "2026-10-28T12:01:14.451Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
